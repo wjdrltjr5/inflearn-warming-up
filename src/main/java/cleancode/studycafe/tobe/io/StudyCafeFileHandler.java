@@ -1,8 +1,9 @@
 package cleancode.studycafe.tobe.io;
 
-import cleancode.studycafe.tobe.model.StudyCafeLockerPass;
 import cleancode.studycafe.tobe.model.StudyCafePass;
 import cleancode.studycafe.tobe.model.StudyCafePassType;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerFactory;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerPass;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -43,7 +44,7 @@ public class StudyCafeFileHandler {
                 int duration = Integer.parseInt(values[1]);
                 int price = Integer.parseInt(values[2]);
 
-                StudyCafeLockerPass lockerPass = StudyCafeLockerPass.of(studyCafePassType, duration, price);
+                StudyCafeLockerPass lockerPass = StudyCafeLockerFactory.createStudyCafeLockerPass(studyCafePassType, duration, price);
                 lockerPasses.add(lockerPass);
             }
 

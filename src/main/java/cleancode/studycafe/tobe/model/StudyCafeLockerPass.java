@@ -1,3 +1,4 @@
+/*
 package cleancode.studycafe.tobe.model;
 
 public class StudyCafeLockerPass {
@@ -42,3 +43,4 @@ public class StudyCafeLockerPass {
     }
 
 }
+*/
