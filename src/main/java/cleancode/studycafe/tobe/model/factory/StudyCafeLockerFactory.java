@@ -1,6 +1,10 @@
-package cleancode.studycafe.tobe.model.locker;
+package cleancode.studycafe.tobe.model.factory;
 
 import cleancode.studycafe.tobe.model.StudyCafePassType;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerFixedPass;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerHourPass;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerPass;
+import cleancode.studycafe.tobe.model.locker.StudyCafeLockerWeekPass;
 
 public class StudyCafeLockerFactory {
 
@@ -16,7 +20,7 @@ public class StudyCafeLockerFactory {
                 return StudyCafeLockerFixedPass.of(type, duration, price);
             }
         }
-        throw new IllegalArgumentException("올바르지 않은 타입니다.");
+        throw new IllegalArgumentException("올바르지 않은 타입 입니다.");
     }
 
 }
