@@ -23,4 +23,8 @@ public class StudyCafeLockerPasses {
             .findFirst();
     }
 
+    public int size(){
+        return lockerPasses.size();
+    }
+
 }

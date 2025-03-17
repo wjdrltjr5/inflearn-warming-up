@@ -20,4 +20,8 @@ public class StudyCafeSeatPasses {
             .toList();
     }
 
+    public int size(){
+        return passes.size();
+    }
+
 }
